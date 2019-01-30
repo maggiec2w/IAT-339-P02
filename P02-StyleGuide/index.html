@@ -1,0 +1,414 @@
+<!--
+reference from:
+- P01 - Style Guide Template
+- https://www.w3schools.com
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>P01 - Process: Style Guide Template</title>
+  
+    <link rel = "stylesheet" href = "css/normalize.css">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400">
+
+</head>
+  <body>
+    <header>
+      <h1>P01 - Process: Style Guide</h1>
+
+      <nav>        
+        <a class = "main-nav" href="#interactive_elements">Interactive Elements</a>
+        <a class = "main-nav" href="#text_elements">Text Elements</a>
+        <a class = "main-nav" href="#combined_elements">Combined Elements</a>
+        <a class = "main-nav" href="product_listing.html">Product Listing Template</a>
+        <a class = "main-nav" href="checkout.html">Checkout Template</a>
+        <a class = "main-nav" href="#citations">Citations</a>
+      </nav>
+    </header>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;p&gt;Hello this is an &lt;a href="#" class = "in-text-link"&gt;in-text link.&lt;/a&gt;&lt;p&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <p>Hello this is an <a href="#" class = "in-text-link">in-text link.</a></p>
+      
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.nav-link</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="#" class="nav-link"&gt;call to action&lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <a class="nav-link" href="#">call to action</a>
+
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        
+        <h4>css selector:</h4>
+        <p>.formbutton</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;button class="formbutton"&gt;Submit Button&lt;/button&gt;
+        </code>
+        <code>
+          &lt;button class="formbutton"&gt;Reset Button&lt;/button&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <button class="formbutton">Submit Button</button>
+        <button class="formbutton">Reset Button</button>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>css selector:</h4>
+        <p>.text-field</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;form&gt;&lt;input type="text" name="text field input" class = "text-field"&gt;&lt;/form&gt;
+        </code>
+      
+        <h4>Rendered element:</h4>
+        <form><input type="text" name="text field input" class = "text-field"></form>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>css selector:</h4>
+        <p>.radiobutton</p>
+
+        <h4>Sample code:</h4>
+        <code>               
+            &lt;label class="container"&gt;
+              &lt;input type="radio" name="radio"&gt;
+              &lt;span class="radiobutton"&gt;&lt;/span&gt;
+              Label
+            &lt;/label&gt;
+        </code>
+      
+        <h4>Rendered element:</h4>
+        
+        <label class="radio-container">
+            <input type="radio" name="radio">
+            <span class="radiobutton"></span>
+            Label
+        </label>
+      
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        
+        <h4>css selector:</h4>
+        <p>.img-as-link</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;a href="#"&gt;&lt;img class = "img-as-link" alt = "img" src = "orange.png" width=200&gt;&lt;/a&gt;
+        </code>
+        
+        <h4>Rendered element:</h4>
+        <a href="#" ><img class = "img-as-link" alt = "img" src = "img/orange.png" width=200></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>css selector:</h4>
+        <p>h1</p>
+        <p>h2</p>
+        <p>h3</p>
+        <p>h4</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;Heading1&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;Heading2&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;Heading3&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;Heading4&lt;/h4&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+        <h3>Heading3</h3>
+        <h4>Heading4</h4>
+      </section>
+          
+      <!-- <h1>Heading</h1> -->
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>css selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at posuere purus, nec facilisis nunc. Nunc tempor hendrerit ante, at faucibus neque lacinia id. Phasellus porta consectetur ante eget dapibus. Duis non interdum enim. Aenean et vestibulum tortor. Curabitur felis sapien, ultrices in nibh non, rutrum vulputate velit. Pellentesque volutpat lacinia leo, malesuada suscipit mi egestas sed. Quisque ac consectetur eros. Vestibulum ornare risus consequat hendrerit varius. Donec mollis lectus sed tristique rhoncus. Phasellus dignissim orci et mollis mattis. Donec ipsum dolor, efficitur eu feugiat et, ullamcorper et libero. Aliquam consectetur mi non vestibulum porta. Aliquam maximus placerat purus eu congue. Nunc nunc velit, cursus a rhoncus congue, imperdiet ac odio.&lt;/p&gt;</code>
+        
+        <h4>Rendered element:</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at posuere purus, nec facilisis nunc. Nunc tempor hendrerit ante, at faucibus neque lacinia id. Phasellus porta consectetur ante eget dapibus. Duis non interdum enim. Aenean et vestibulum tortor. Curabitur felis sapien, ultrices in nibh non, rutrum vulputate velit. Pellentesque volutpat lacinia leo, malesuada suscipit mi egestas sed. Quisque ac consectetur eros. Vestibulum ornare risus consequat hendrerit varius. Donec mollis lectus sed tristique rhoncus. Phasellus dignissim orci et mollis mattis. Donec ipsum dolor, efficitur eu feugiat et, ullamcorper et libero. Aliquam consectetur mi non vestibulum porta. Aliquam maximus placerat purus eu congue. Nunc nunc velit, cursus a rhoncus congue, imperdiet ac odio.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>css selector:</h4>
+        <p>ol</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;
+          &lt;li&gt;number 1&lt;/li&gt;
+          &lt;li&gt;number 2&lt;/li&gt;
+          &lt;li&gt;number 3&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>number 1</li>
+          <li>number 2</li>
+          <li>number 3</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <h4>css selector:</h4>
+        <p>main-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;nav&gt;
+            &lt;a class = "main-nav" href = "index.html"&gt;Home&lt;/a&gt;
+            &lt;a class = "main-nav" href = "products.html"&gt;Products&lt;/a&gt;
+            &lt;a class = "main-nav" href = "blog.html"&gt;Blog&lt;/a&gt;
+            &lt;a class = "main-nav" href = "aboutus.html"&gt;About Us&lt;/a&gt;
+            &lt;a class = "main-nav" href = "contact.html"&gt;Contact&lt;/a&gt;
+          &lt;/nav&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <nav>
+        <a class = "main-nav" href = "index.html">Home</a>
+        <a class = "main-nav" href = "products_listing.html">Products</a>
+        <a class = "main-nav" href = "#">Blog</a>
+        <a class = "main-nav" href = "#">About Us</a>
+        <a class = "main-nav" href = "#">Contact</a>
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3>Product Listing</h3>
+        
+        <h4>css selector:</h4>
+        <p>.product</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="product-list-item"&gt;
+            &lt;img class = "img-as-link" src="img/orange.png" alt="orange" width=200&gt;
+            &lt;h3&gt;orange-ade 500ml x 4&lt;/h3&gt;
+            &lt;h4&gt; class="price"&gt;$20.00&lt;/h4&gt;
+            &lt;p&gt;freshly squeezed local oranges in a carton, this is an ordinary orange-ade.&lt;/p&gt;
+            &lt;button&gt; class="formbutton"&gt;add to cart&lt;/button&gt;
+          &lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <section class="product-list-item">
+          <img class = "img-as-link" src="img/orange.png" alt="orange" width=200>
+          <h3>orange-ade 500ml x 4</h3>
+          <p>freshly squeezed local oranges in a carton, this is an ordinary orange-ade.</p>
+          <h4 class="price">$20.00</h4>
+          <button class="formbutton">add to cart</button>
+        </section>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        
+        <h4>css selector:</h4>
+        <p>.paymentform</p>
+        
+        <h4>Rendered element:</h4>
+        <section class="paymentform">
+          <h3>Payment</h3>
+
+          <section class = "paymentform-item">
+          <h4>card information:</h4>
+            <label class="radio-container">
+                <input type="radio" checked="checked" name="radio">
+                <span class="radiobutton"></span>
+                mastercard
+            </label>
+            <label class="radio-container">
+                <input type="radio" name="radio">
+                <span class="radiobutton"></span>
+                visa
+            </label>
+            <label class="radio-container">
+                <input type="radio" name="radio">
+                <span class="radiobutton"></span>
+                american express
+            </label>
+            <label class="radio-container">
+                <input type="radio" name="radio">
+                <span class="radiobutton"></span>
+                unionpay
+            </label>
+
+            <form>
+                <label class = "text-field-container" for="cardname">name on card: 
+                    <input type="text" class="text-field" id="cardname">
+                </label>
+                
+            
+                <label class = "text-field-container" for="cardnumber">credit card number: 
+                    <input type="text" class="text-field" id="cardnumber">
+                </label>
+                
+                
+                <label class = "text-field-container" for="exp">expiration: 
+                    <input type="text" class="text-field" id="exp">
+                </label>
+                
+                
+                <label class = "text-field-container" for="cvv">cvv: 
+                    <input type="text" class="text-field" id="cvv">
+                </label>
+                
+            </form>
+          </section>
+
+          <section class = "paymentform-item">
+              <h4>billing address: </h4>
+              <form>
+                  <label class = "text-field-container" for="name">name: 
+                      <input type="text" class="text-field" id="name">
+                  </label>
+                  
+                  <label class = "text-field-container" for="address">street address: 
+                      <input type="text" class="text-field" id="address">
+                  </label>
+
+              
+                  <label class = "text-field-container" for="city">city: 
+                      <input type="text" class="text-field" id="city">
+                  </label>
+                  
+                  <label class = "text-field-container" for="province">province: 
+                      <input type="text" class="text-field" id="province">
+                  </label>
+
+                  
+                  <label class = "text-field-container" for="postalcode">postal code: 
+                      <input type="text" class="text-field" id="postalcode">
+                  </label>
+
+                  <label class="radio-container">
+                      <input type="checkbox" name="radio">
+                      <span class="radiobutton"></span>
+                      shipping address same as billing address
+                  </label>
+              </form>
+              <br>
+              <button class="formbutton">place order</button>
+          </section>
+        </section>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <h4>css selector:</h4>
+        <p>.checkoutcart</p>
+        
+        <h4>Sample code:</h4>
+        
+        <h4>Rendered element:</h4>
+        <section class="checkoutcart">
+          <h3>your cart</h3>
+          <h4>orange-ade 500ml x 4</h4>
+          <p>$20.00</p>
+          <h4>grapefruit-ade 500ml x 6</h4>
+          <p>$30.00</p>
+          <br>
+          <h4>total: $50.00</h4>
+          <button class="formbutton">check out</button>
+        </section>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <!-- BRANDING INFORMATION -->
+    <section>
+        <h2>Company Branding</h2>
+        <img class="branding-img" src="img/branding-new.png" alt="branding">
+    </section>
+    <!-- BRANDING SECTION -->
+    <section id = "citations">
+        <section class="element">
+            <h2>Citations</h2>
+            <ul>
+                <li>https://www.w3schools.com</li>
+                <li>https://floridasnatural.com/img/juices/background/orangeleaves.png</li>
+                <li>https://i.pinimg.com/736x/ee/6d/cc/ee6dccff5b4c64d98284c7856dd6b2e3--local-photographers-still-life-photographers.jpg</li>
+            </ul>
+        </section>
+    </section>
+  </body>
+ </html>
