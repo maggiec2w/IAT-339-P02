@@ -1,0 +1,274 @@
+/* -------------GENERAL-------------- */
+body {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 2rem;
+    font-size: 1rem;
+}
+
+p, ol, ul{
+    max-width:50rem;
+}
+
+code, samp {
+    font-size: 0.8rem;
+    display: block;
+    background-color: rgb(240, 240, 240);
+    padding: 0.5rem;
+}
+
+label{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    padding-top: 0.3rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+img{
+    /* width: 100%; */
+    max-width: 50rem;
+    height: auto;
+}
+
+nav {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+  
+
+/* -------------GENERAL-------------- */
+
+/* -------------INTERACTIVE ELEMENTS-------------- */
+
+.in-text-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2rem;
+    color: #fcc917;
+    transition-duration: 1s;   
+}
+
+.in-text-link:active, .in-text-link:hover, .in-text-link:focus {
+    color: #ef4825;
+    transform: translate(0, -0.3rem);   
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 2rem;
+    color: #fcc917;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.nav-link:active, .nav-link:hover, .nav-link:focus {
+    color: #ef4825;
+    letter-spacing: 0.3rem;
+}
+
+.main-nav {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #fcc917;
+    padding: 1rem;
+    text-decoration: none;
+    transition-property: color;
+    transition: 1s;
+}
+
+.main-nav:active, .main-nav:hover, .main-nav:focus {
+    color: #ef4825;
+    transform: translate(0, -0.3rem);
+}
+
+.citation{
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    background-color: #fdde49;
+}
+
+.formbutton {
+    display: inline-block;
+    border: none;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 0.6rem;
+    color: white;
+    background-color: #ee725f;
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+  }
+
+.formbutton:hover, .formbutton:focus {
+    background-color: #ef4825;
+    color: white;
+}
+
+.img-as-link {
+    padding: 0.3rem;
+    opacity: 1;
+    transition: 0.5s;
+    backface-visibility: hidden;   
+    max-width: 50rem;
+    height: auto;
+}
+
+.img-as-link:active, .img-as-link:hover, .img-as-link:focus {
+    opacity: 0.5;
+}
+
+/* -------------INTERACTIVE ELEMENTS-------------- */
+
+/* -------------TEXT ELEMENTS-------------- */
+h1 {
+    font-family: "EB Garamond", serif;
+    font-weight : 500;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    font-weight : 500;
+    font-size: 2rem;
+    text-align: center;
+    /* border-bottom: 1px solid #EE725F; */
+}
+
+h3 {
+    margin-top: 0.5rem;
+}
+
+p, ol, ul {
+    font-size: 1rem;
+    font-weight : 300;
+}
+
+/* -------------TEXT ELEMENTS-------------- */
+
+/* -------------COMBINED ELEMENTS-------------- */
+
+form {
+    margin-top: 0.5rem;
+}
+
+.text-field {
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.3rem 0.3rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    border: 0.04rem solid #adadad;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.text-field-container {
+    display: block;
+    margin: 0;
+}
+
+
+/* -------------(RADIO BUTTON)-------------- */
+
+.radio-container {
+    display: block;
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    cursor: pointer;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .radiobutton {
+    background-color: #ccc;
+}
+
+  /* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .radiobutton {
+    background-color: #ee725f;
+}
+
+.radiobutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobutton:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .radiobutton:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.radio-container .radiobutton:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* -------------(RADIO BUTTON)-------------- */
+
+.checkoutcart, .paymentform, .product-list-item {
+    margin-right: 1rem;
+    padding: 1.2rem;
+    border: 0.04rem solid #adadad;
+    border-radius: 2rem;
+}
+
+.checkoutcart {
+    width: auto;
+}
+
+.paymentform-item {
+    margin-top: 1.5rem;
+    width: 20rem;
+}
+
+.product-list-item {
+    margin-bottom: 1rem;
+    /* max-width: 23rem; */
+}
+
+.product-list h3, .paymentform h4 {
+    color:#fcc917;
+}
+
+#checkout-page h3, .checkoutcart h3 {
+    color: #ef4825;
+}
+
+/* -------------COMBINED ELEMENTS-------------- */
+
+.branding-img {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+}

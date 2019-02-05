@@ -10,17 +10,122 @@
     <link rel = "stylesheet" href = "css/style.css">
     <link rel = "stylesheet" href = "css/grid.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <nav>        
+        <h1>Citrus Juicery</h1>
+        <nav class="main-nav-container">             
             <a class = "main-nav" href="index.html">home</a>
-            <a class = "main-nav" href="ourphilosophies.html">our philosophies</a>
+            <a class = "main-nav" href="our_philosophy.html">our philosophies</a>
             <a class = "main-nav" href="shop.html">shop</a>
             <a class = "main-nav" href="updates.html">updates</a>
             <a class = "main-nav" href="index.html#citations">contact</a>
             <a class = "main-nav" href="cart.html">cart</a>
         </nav>
     </header>
+
+    <h3>Payment</h3>
+<section id = "checkout-page-container">
+    
+    <section class="paymentform">
+        <section class = "paymentform-item">
+            <h4>card information:</h4>
+            <label class="radio-container">
+                <input type="radio" checked="checked" name="radio">
+                <span class="radiobutton"></span>
+                mastercard
+            </label>
+            <label class="radio-container">
+                <input type="radio" name="radio">
+                <span class="radiobutton"></span>
+                visa
+            </label>
+            <label class="radio-container">
+                <input type="radio" name="radio">
+                <span class="radiobutton"></span>
+                american express
+            </label>
+            <label class="radio-container">
+                <input type="radio" name="radio">
+                <span class="radiobutton"></span>
+                unionpay
+            </label>
+
+            <form>
+                <label class = "text-field-container" for="cardname">name on card: 
+                    <input type="text" class="text-field" id="cardname">
+                </label>
+                
+            
+                <label class = "text-field-container" for="cardnumber">credit card number: 
+                    <input type="text" class="text-field" id="cardnumber">
+                </label>
+                
+                
+                <label class = "text-field-container" for="exp">expiration: 
+                    <input type="text" class="text-field" id="exp">
+                </label>
+                
+                
+                <label class = "text-field-container" for="cvv">cvv: 
+                    <input type="text" class="text-field" id="cvv">
+                </label>
+            </form>
+        </section>
+
+        <section class = "paymentform-item">
+            <h4>billing address:</h4>
+            <form>
+                <label class = "text-field-container" for="name">name: 
+                    <input type="text" class="text-field" id="name">
+                </label>
+                
+                <label class = "text-field-container" for="address">street address: 
+                    <input type="text" class="text-field" id="address">
+                </label>
+
+            
+                <label class = "text-field-container" for="city">city: 
+                    <input type="text" class="text-field" id="city">
+                </label>
+                
+                <label class = "text-field-container" for="province">province: 
+                    <input type="text" class="text-field" id="province">
+                </label>
+
+                
+                <label class = "text-field-container" for="postalcode">postal code: 
+                    <input type="text" class="text-field" id="postalcode">
+                </label>
+
+                <label class="radio-container">
+                    <input type="checkbox" name="radio">
+                    <span class="radiobutton"></span>
+                    shipping address same as billing address
+                </label>
+            </form>
+            <br>
+            <button class="formbutton">place order</button>
+        </section>
+     </section>
+    
+
+    <section class="element">
+        <section class="checkoutcart">
+            <h3>your cart</h3>
+            <h4>orange-ade 500ml x 4</h4>
+            <p>$20.00</p>
+            <h4>grapefruit-ade 500ml x 6</h4>
+            <p>$30.00</p>
+            <br>
+            <h4>total: $50.00</h4>
+            <button class="formbutton">edit items</button>
+        </section>
+    </section>
+</section>
+
+
 </body>
 </html>
