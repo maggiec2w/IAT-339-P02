@@ -1,7 +1,8 @@
 /* -------------GENERAL-------------- */
 body {
     font-family: "Josefin Sans", sans-serif;
-    margin: 2rem;
+    height: 100%;
+    /* margin: 2rem; */
     font-size: 1rem;
 }
 
@@ -26,8 +27,7 @@ label{
 
 img{
     width: 100%;
-    /* max-width: 50rem; */
-    height: auto;
+    height: 100%;
 }
 
 nav {
@@ -116,8 +116,9 @@ nav {
     opacity: 1;
     transition: 0.5s;
     backface-visibility: hidden;   
-    max-width: 50rem;
-    height: auto;
+    /* max-width: 50rem; */
+    width: initial;
+    height: initial;
 }
 
 .img-as-link:active, .img-as-link:hover, .img-as-link:focus {
@@ -130,7 +131,8 @@ nav {
 h1 {
     font-family: "EB Garamond", serif;
     font-weight : 500;
-    font-size: 3rem;
+    font-size: 2.8rem;
+    text-align: center;
 }
 
 h2 {
@@ -233,11 +235,10 @@ form {
     border-radius: 50%;
     background: white;
 }
-
 /* -------------(RADIO BUTTON)-------------- */
 
 .checkoutcart, .paymentform, .product-list-item {
-    margin-right: 1rem;
+    margin: 1rem;
     padding: 1.2rem;
     border: 0.04rem solid #adadad;
     border-radius: 2rem;
@@ -252,23 +253,89 @@ form {
     width: 20rem;
 }
 
-.product-list-item {
-    margin-bottom: 1rem;
-    /* max-width: 23rem; */
+#checkout-page h3, .checkoutcart h3 {
+    color: #ef4825;
+}
+
+.branding-img {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+}
+
+.banner_img{
+    border: 1px solid lightgrey;
+}
+/* -------------COMBINED ELEMENTS-------------- */
+
+/* -------------Homepage ELEMENTS-------------- */
+
+.basic_element img{
+    border: 1px solid black;
+    height: 100%;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------Homepage ELEMENTS-------------- */
+
+/* -------------OUR PHILOSOPHY ELEMENTS-------------- */
+
+
+#our_philosophy_para1 p{
+    text-align: center;
+    margin: 2rem;
+    max-width: 90rem;
+}
+/* -------------OUR PHILOSOPHY ELEMENTS-------------- */
+
+
+/* -------------SHOP PAGE ELEMENTS-------------- */
+.product-list-item img{
+    height: 75%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-list h3, .paymentform h4 {
     color:#fcc917;
 }
 
-#checkout-page h3, .checkoutcart h3 {
-    color: #ef4825;
+/* -------------SHOP PAGE ELEMENTS-------------- */
+
+
+/* -------------BANNER UNDER-------------- */
+.banner_under{
+    padding: 2rem;
+    background-color: #fcc917;
 }
 
-/* -------------COMBINED ELEMENTS-------------- */
+.banner_under p{
+    text-align: center;
+    max-width: 100rem;
+}
 
-.branding-img {
-    width: 100%;
-    max-width: 50rem;
-    height: auto;
+.banner_under h3{
+    border-bottom: 1px solid black;
+}
+
+/* -------------BANNER UNDER-------------- */
+
+#contact_page .basic_element{
+    position: relative;
+    text-align: center;
+}
+
+.contacts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #ef4825; */
+    padding: 0.5rem;
+    color: lightgrey;
 }

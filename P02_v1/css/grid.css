@@ -6,71 +6,102 @@
 .main-nav-container{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 16em;
+    flex-basis: 13em;
     border-top: 1px solid black;
-    /* align-items: center; */
+   
     justify-content: center;
 }
 
-.homepage_container, .ourphilosophy_container{
+/* homepage + philosophy + contact + update */
+.basic_container{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 45rem;
+    flex-basis: 40rem;
     justify-content: center;
-    /* border-top: 1px solid #EE725F; */
+
 }
 
-.homepage_element, .ourphilosophy_element{
-    /* padding: 2rem; */
+.basic_element{
+    padding: 2rem;
     margin: 2rem;
 }
 
-.homepage_element{
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
+#home_page{
+    flex-basis: 30rem;
+}
+
+#our_philosophy_para1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100rem;
+    justify-content: center;
+}
+
+#contact_page{
+    flex-basis: 20rem;
 }
 
 
+
+/* CART  */
 .paymentform {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 1rem;
 }
 
 .paymentform-item {
-    margin-right: 1rem;
+    margin: 1rem;
 }
 
 #checkout-page-container {
     display: flex;
     flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
 }
 
+/* PRODUCT LIST */
 .product-list-container{
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 30rem;
+    justify-content: center;
 }
 
 .product-list-item{
-    /* width: 30%; */
+    margin: 1rem;
 }
 
+/* BANNER UNDER */
+.banner_under{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30rem;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.banner_under_element{
+    padding: 1rem;
+}
+
+
+/* MEDIA QUERIE */
 
 @media screen and (max-width: 90rem){
     
     .main-nav{
         flex-basis:20em;
     }
-    .product-list-item{
+    /* .product-list-item{
         width: 40%;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 40rem){
-    .product-list-item{
+    /* .product-list-item{
         width: 100%;
-    }
+    } */
  
 }
