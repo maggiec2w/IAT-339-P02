@@ -124,7 +124,6 @@ h4 {
 }
 
 .formbutton {
-    /* display: inline-block; */
     border: none;
     padding: 0.5rem;
     width: 10rem;
@@ -322,6 +321,30 @@ form {
     border-bottom: 1px solid black;
 }
 
+.newsletter_container .formbutton {
+    padding: 0.3rem;
+    width: 5rem;
+    display: inline-block;
+}
+
+.newsletter_container .text-field {
+    width: inherit;
+}
+
+.newsletter_container label {
+    display: inline-block;
+    text-align: left;
+}
+
+.banner_under_element .in-text-link {
+    color: white;
+    font-weight: 500;
+}
+
+.banner_under_element .in-text-link:active, .banner_under_element .in-text-link:hover, .banner_under_element .in-text-link:focus {
+    color: #ef4825;
+    transform: translate(0, -0.3rem);   
+}
 /* -------------BANNER UNDER-------------- */
 
 #contact_page .basic_element{
