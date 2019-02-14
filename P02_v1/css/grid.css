@@ -6,10 +6,12 @@
 .main-nav-container{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 13em;
+    text-align: center;
+    flex-basis: 10rem;
     border-top: 1px solid black;
-   
     justify-content: center;
+    
+
 }
 
 /* homepage + philosophy + contact + update */
@@ -22,8 +24,8 @@
 }
 
 .basic_element{
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
 }
 
 #home_page{
@@ -64,12 +66,15 @@
 .product-list-container{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 30rem;
+    flex-basis: 33rem;
     justify-content: center;
 }
 
 .product-list-item{
     margin: 1rem;
+    padding: 1.2rem;
+    border: 0.04rem solid #adadad;
+    border-radius: 2rem;
 }
 
 /* BANNER UNDER */
@@ -86,13 +91,14 @@
 }
 
 
+
 /* MEDIA QUERIE */
 
 @media screen and (max-width: 90rem){
     
-    .main-nav{
-        flex-basis:20em;
-    }
+    /* .main-nav{
+        width: 40%;
+    } */
     /* .product-list-item{
         width: 40%;
     } */
@@ -100,8 +106,11 @@
 
 
 @media screen and (max-width: 40rem){
-    /* .product-list-item{
-        width: 100%;
-    } */
+    .basic_element{
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+
  
 }
