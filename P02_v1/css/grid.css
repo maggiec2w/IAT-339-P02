@@ -7,10 +7,9 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    flex-basis: 10rem;
+    flex-basis: 12rem;
     border-top: 1px solid black;
     justify-content: center;
-    
 
 }
 
@@ -29,7 +28,7 @@
 }
 
 #home_page{
-    flex-basis: 22rem;
+    flex-basis: 30vw;
 }
 
 #our_philosophy_para1{
@@ -66,7 +65,7 @@
 .product-list-container{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 33rem;
+    flex-basis: 30vw;
     justify-content: center;
 }
 
@@ -81,13 +80,13 @@
 .banner_under{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 22rem;
+    flex-basis: 25rem;
     justify-content: center;
     margin-top: 10rem;
 }
 
 .banner_under_element{
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 .newsletter_container {
@@ -100,23 +99,50 @@
 
 /* MEDIA QUERIE */
 
-@media screen and (max-width: 90rem){
+@media screen and (max-width: 80rem){
     
-    /* .main-nav{
-        width: 40%;
-    } */
-    /* .product-list-item{
-        width: 40%;
-    } */
+    .basic_element{
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    
+    #home_page{
+        flex-basis: 40vw;
+    }
+    .product-list-container{
+        flex-basis: 40vw;
+    }
+
+    .product-list-item{
+        margin: 0.5rem;
+        
+    }
+
 }
 
 
 @media screen and (max-width: 40rem){
     .basic_element{
-        padding: 1rem;
-        margin: 1rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    #home_page{
+        flex-basis: 70vw;
     }
 
+    .product-list-container{
+        flex-basis: 70vw;
+    }
 
- 
+    .product-list-item{
+        margin: 0.5rem;
+       
+    }
+    .main-nav-container{
+        flex-basis: 20rem;
+    }
+    
+    .main-nav{
+        font-size: 1rem;
+    }
 }

@@ -34,7 +34,6 @@ img{
 
 nav {
     text-decoration: none;
-    margin-right: 1rem;
 }
   
 
@@ -101,7 +100,7 @@ h4 {
     display: inline-block;
     font-size: 1.2rem;
     color: #fcc917;
-    padding: 1rem;
+    padding: 1.2vw;
     text-decoration: none;
     transition-property: color;
     transition: 1s;
@@ -167,7 +166,7 @@ form {
     width: 100%;
     max-width: 20rem;
     padding: 0.3rem 0.3rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     display: inline-block;
     border: 0.04rem solid #adadad;
     border-radius: 5px;
@@ -271,8 +270,6 @@ form {
 /* -------------Homepage ELEMENTS-------------- */
 
 .basic_element img{
-    /* border: 1px solid black; */
-    /* height: 90%; */
     width: 90%;
     display: block;
     margin-left: auto;
@@ -285,8 +282,16 @@ form {
 
 
 #our_philosophy_para1 p{
+    font-size: 1.5rem;
     text-align: center;
-    margin: 2rem;
+    margin-top: 2rem;
+    max-width: 90rem;
+}
+
+#our_philosophy_para1 #para1_second_sentence{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
     max-width: 90rem;
 }
 /* -------------OUR PHILOSOPHY ELEMENTS-------------- */
@@ -294,6 +299,7 @@ form {
 
 /* -------------SHOP PAGE ELEMENTS-------------- */
 .product-list-item img{
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -322,18 +328,21 @@ form {
 }
 
 .newsletter_container .formbutton {
-    padding: 0.3rem;
-    width: 5rem;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    flex-basis: 5rem;
     display: inline-block;
 }
 
 .newsletter_container .text-field {
-    width: inherit;
+    display: inline-block;
+    flex-basis:12rem;
+
 }
 
-.newsletter_container label {
-    display: inline-block;
-    text-align: left;
+.newsletter_container .text-field-container{
+    flex-basis: 4rem;
+    /* width: 10%; */
 }
 
 .banner_under_element .in-text-link {
@@ -347,6 +356,7 @@ form {
 }
 /* -------------BANNER UNDER-------------- */
 
+/* -------------Contact ELEMENTS-------------- */
 #contact_page .basic_element{
     position: relative;
     text-align: center;
@@ -361,3 +371,6 @@ form {
     padding: 0.5rem;
     color: lightgrey;
 }
+
+/* -------------Contact ELEMENTS-------------- */
+
