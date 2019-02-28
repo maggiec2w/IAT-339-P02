@@ -15,15 +15,18 @@
 </head>
 <body>
     <header>
+        <img class= "header-img" src="img/home/lemons.png" alt="logo"> 
         <h1>Citrus Juicery</h1>
-        <nav class="main-nav-container">        
-            <a class = "main-nav" href="index.html">home</a>
-            <a class = "main-nav" href="our_philosophy.html">our philosophy</a>
-            <a class = "main-nav" href="shop.html">shop</a>
-            <a class = "main-nav" href="updates.html">updates</a>
-            <a class = "main-nav" href="contact.html">contact</a>
-            <a class = "main-nav" href="cart.html">cart</a>
-        </nav>
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="main-nav-container">        
+            <li><a class = "main-nav" href="index.html">home</a></li>
+            <li><a class = "main-nav" href="our_philosophy.html">our philosophy</a></li>
+            <li><a class = "main-nav" href="shop.html">shop</a></li>
+            <li><a class = "main-nav" href="updates.html">updates</a></li>
+            <li><a class = "main-nav" href="contact.html">contact</a></li>
+            <li><a class = "main-nav" href="cart.html">cart</a></li>
+        </ul>
     </header>
 
 
@@ -31,26 +34,45 @@
         <img class= "banner_img" src="img/home/mainbanner.jpg" alt="homepage" >
     </section>
 
+    <section class= "home-content">
+            <h2>explore our pages</h2>
+            <h3>understand the story behind our juicery, and join us on our mission to deliver fresh juices to your home.</h3>
+    </section>
+
     <section class = "basic_container" id="home_page">
-      
+        
         <div class = "basic_element">
-            <a href= "#"><img class = "img-as-link" src="img/home/saroff-lemonorange-700.jpg" alt="placeholder_300x300"></a>
+            <a class="overlay1" href= "our_philosophy.html"><img class = "img-as-link" src="img/home/saroff-strawberry-700.jpg" alt="placeholder_300x300"> <h4 class = "overlay_text">our philosophy</h4></a>
         </div>
 
         <div class = "basic_element">
-            <a href= "#"><img class = "img-as-link" src="img/home/saroff-mandarin-700.jpg" alt="placeholder_300x300"></a>
+            <a class="overlay1" href= "updates.html"><img class = "img-as-link" src="img/home/saroff-watermelon-700.jpg" alt="placeholder_300x300"><h4 class = "overlay_text">updates</h4></a>
         </div>
+
         <div class = "basic_element">
-            <a href= "#"><img class = "img-as-link" src="img/home/saroff-guava-700.jpg" alt="placeholder_300x300"></a>
+            <a class="overlay1" href= "contact.html"><img class = "img-as-link" src="img/home/saroff-cabbage-700.jpg" alt="placeholder_300x300"><h4 class = "overlay_text">contact us</h4></a>
         </div>
+
+    </section>
+
+    <section class= "home-content">
+            <h2>shop juices</h2>
+            <h3>try one of our best selling juices and your body will thank you.</h3>
+    </section>
+
+    <section class = "basic_container" id="home_page1">
+
         <div class = "basic_element">
-            <a href= "#"><img class = "img-as-link" src="img/home/saroff-strawberry-700.jpg" alt="placeholder_300x300"></a>
+            <a class="overlay2" href= "bloodorange.html"><img class = "img-as-link" src="img/home/juice-bloodorange.png" alt="bloodorange"><h4 class = "overlay_text">bloodorange</h4></a>
         </div>
+    
         <div class = "basic_element">
-            <a href= "#"><img class = "img-as-link" src="img/home/saroff-watermelon-700.jpg" alt="placeholder_300x300"></a>
+            <a class="overlay2" href= "lemon&orange.html"><img class = "img-as-link" src="img/home/juice-lemon-orange.png" alt="lemon&orange"><h4 class = "overlay_text">lemon & orange</h4></a>
+            
         </div>
+
         <div class = "basic_element">
-            <a href= "#"><img class = "img-as-link" src="img/home/saroff-cabbage-700.jpg" alt="placeholder_300x300"></a>
+            <a class="overlay2" href= "lemon&orange.html"><img class = "img-as-link" src="img/home/juice-mandarin.png" alt="mandarin"><h4 class = "overlay_text">mandarin</h4></a>
         </div>
     </section>
 
@@ -61,7 +83,8 @@
             <p> Address: 999 Smith Street Coquitlam BC V3X 1X1</p>
             <p>e-mail: citrusjuicery@emaill.com</p>
     
-            <p><a class = "in-text-link" href>Follow us!</a></p>
+            <p><a class = "in-text-link" href = "citation.html">Citation Page</a></p>
+            <p><a class = "in-text-link" href="../P02-StyleGuide/index.html">Style Guide</a></p>
         </div>        
     
         <div class = "banner_under_element">
@@ -69,11 +92,11 @@
     
                 <div class = "newsletter_container">
                     <label class = "text-field-container" for="email">E-mail: </label>
-                    <input type="text" class="text-field">
+                    <input type="text" class="text-field" id="email">
                     <button class="formbutton">submit</button>
                 </div>
                 
-            </div> 
+        </div> 
         
         <div class = "banner_under_element">
             <h3>About Us</h3> 

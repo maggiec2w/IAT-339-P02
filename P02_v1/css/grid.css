@@ -3,16 +3,6 @@
     flex-basis: inherit;
 }
 
-.main-nav-container{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-basis: 12rem;
-    border-top: 1px solid black;
-    justify-content: center;
-
-}
-
 /* homepage + philosophy + contact + update */
 .basic_container{
     display: flex;
@@ -25,9 +15,14 @@
 .basic_element{
     padding: 1.5rem;
     margin: 1.5rem;
+    position: relative;
 }
 
 #home_page{
+    flex-basis: 30vw;
+}
+
+#home_page1{
     flex-basis: 30vw;
 }
 
@@ -38,7 +33,7 @@
     justify-content: center;
 }
 
-#contact_page{
+#contact_page {
     flex-basis: 20rem;
 }
 
@@ -72,7 +67,7 @@
 .product-list-item{
     margin: 1rem;
     padding: 1.2rem;
-    border: 0.04rem solid #adadad;
+    /* border: 0.04rem solid #adadad; */
     border-radius: 2rem;
 }
 
@@ -109,6 +104,11 @@
     #home_page{
         flex-basis: 40vw;
     }
+
+    #home_page1{
+        flex-basis: 40vw;
+    }
+
     .product-list-container{
         flex-basis: 40vw;
     }
@@ -118,16 +118,50 @@
         
     }
 
+    .checkoutcart{
+        width: 45rem;
+    }
+
 }
 
 
 @media screen and (max-width: 40rem){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+
+    p, ol, ul{
+        font-size:0.9rem;
+    }
+
+    .main-nav{
+        padding: 0.3rem;
+    }
+
     .basic_element{
         padding: 0.5rem;
         margin: 0.5rem;
     }
+
     #home_page{
         flex-basis: 70vw;
+    }
+
+    #home_page1{
+        flex-basis: 70vw;
+    }
+
+    .overlay_text{
+        font-size:0.8rem;
     }
 
     .product-list-container{
@@ -136,13 +170,51 @@
 
     .product-list-item{
         margin: 0.5rem;
-       
     }
-    .main-nav-container{
-        flex-basis: 20rem;
+
+    #update_section, #update_section1{
+        border-bottom: 3px solid lightgrey;
     }
-    
-    .main-nav{
-        font-size: 1rem;
+
+    #contact_page .basic_element img{
+        display: inline-block;
+        margin: 1rem;
+        width: 20%;
     }
+
+    .newsletter_container .text-field{
+        margin-right: 0.5rem;
+    }
+    .newsletter_container .formbutton{
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+
 }
+
+@media screen and (min-width: 75rem) {
+    header li a {
+      padding: 10vw;
+    }
+    header .main-nav-container {
+      clear: none;
+      max-height: none;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      flex-basis: 12rem;
+      /* border-top: 2px solid #fcc917; */
+      border-top: 1px solid black;
+      justify-content: center;
+    }
+
+    header .main-nav{
+        font-size: 1.2rem;
+        padding: 1.2vw;
+    }
+
+    header .menu-icon {
+      display: none;
+    }
+  }
+

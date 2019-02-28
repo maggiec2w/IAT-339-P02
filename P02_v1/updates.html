@@ -14,24 +14,28 @@
     
 </head>
 <body>
-    <header>
-        <h1>Citrus Juicery</h1>
-        <nav class="main-nav-container">              
-            <a class = "main-nav" href="index.html">home</a>
-            <a class = "main-nav" href="our_philosophy.html">our philosophy</a>
-            <a class = "main-nav" href="shop.html">shop</a>
-            <a class = "main-nav" href="updates.html">updates</a>
-            <a class = "main-nav" href="contact.html">contact</a>
-            <a class = "main-nav" href="cart.html">cart</a>
-        </nav>
-    </header>
+        <header>
+                <img class= "header-img" src="img/home/lemons.png" alt="logo"> 
+                <h1>Citrus Juicery</h1>
+                <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="main-nav-container">        
+                    <li><a class = "main-nav" href="index.html">home</a></li>
+                    <li><a class = "main-nav" href="our_philosophy.html">our philosophy</a></li>
+                    <li><a class = "main-nav" href="shop.html">shop</a></li>
+                    <li><a class = "main-nav" href="updates.html">updates</a></li>
+                    <li><a class = "main-nav" href="contact.html">contact</a></li>
+                    <li><a class = "main-nav" href="cart.html">cart</a></li>
+                </ul>
+        </header>
 
-    <h2>updates</h2>
+   
+    
     <div>
         <img class= "banner_img" src="img/home/mainbanner.jpg" alt="homepage" >
     </div>
-    
-    <section class = "basic_container">
+    <h2>updates</h2>
+    <section class = "basic_container" >
 
         <section class = "basic_element">
         <h3>First Juice Truck Opening Soon in Downtown Vancouver</h3>
@@ -41,7 +45,7 @@
         </p>
         </section>
 
-        <section class = "basic_element">
+        <section class = "basic_element" id = "update_section">
                 <a href= "#"><img class = "img-as-link" src="img/updates/downtown-new.jpg" alt="Downtown_500x300"></a>
         </section>
 
@@ -54,7 +58,7 @@
 
         </section>
 
-        <section class = "basic_element">
+        <section class = "basic_element" id = "update_section1">
                 <a href= "#"><img class = "img-as-link" src="img/updates/newyearimg.jpg" alt="placeholder_500x300"></a>
         </section>
         
@@ -67,7 +71,7 @@
             </p>
         </section>
 
-        <section class = "basic_element">
+        <section class = "basic_element" >
             <a href= "#"><img class = "img-as-link" src="img/updates/xmas-new.jpg" alt="placeholder_500x300"></a>
         </section>
 
@@ -75,23 +79,23 @@
     </section>
 
     <section class = "banner_under">
-        <div class = "banner_under_element">
-            <h3>Contact Us</h3> 
-            <p>Tel: 604-123-4567</p>
-            <p> Address: 999 Smith Street Coquitlam BC V3X 1X1</p>
-            <p>e-mail: citrusjuicery@emaill.com</p>
-    
-            <p><a class = "in-text-link" href>Follow us!</a></p>
-        </div>        
-    
+            <div class = "banner_under_element">
+                    <h3>Contact Us</h3> 
+                    <p>Tel: 604-123-4567</p>
+                    <p> Address: 999 Smith Street Coquitlam BC V3X 1X1</p>
+                    <p>e-mail: citrusjuicery@emaill.com</p>
+            
+                    <p><a class = "in-text-link" href = "citation.html">Citation Page</a></p>
+                    <p><a class = "in-text-link" href="../P02-StyleGuide/index.html">Style Guide</a></p>
+                </div>  
         <div class = "banner_under_element">
                 <h3>Newsletter</h3> 
     
                 <div class = "newsletter_container">
-                    <label class = "text-field-container" for="email">E-mail: </label>
-                    <input type="text" class="text-field">
-                    <button class="formbutton">submit</button>
-                </div>
+                        <label class = "text-field-container" for="email">E-mail: </label>
+                        <input type="text" class="text-field" id="email">
+                        <button class="formbutton">submit</button>
+                    </div>
                 
             </div> 
         
